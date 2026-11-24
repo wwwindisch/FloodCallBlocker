@@ -1,3 +1,5 @@
+<p align="center"><img src="design/icon-rounded-512.png" width="128" alt="FloodCallBlocker icon"></p>
+
 # FloodCallBlocker
 
 **Temporarily blocks callers who call too often – without blocking them forever.**
@@ -87,3 +89,5 @@ Issues and pull requests are welcome. See [docs/DEVELOPMENT.md](docs/DEVELOPMENT
 ## License
 
 [GPLv3](LICENSE)
+
+The phone symbol in the app icon is based on "phone" from [Lucide](https://lucide.dev) (ISC license).

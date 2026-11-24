@@ -58,7 +58,7 @@ android {
         abortOnError = true
         checkDependencies = true
         // Dependency updates are handled manually.
-        disable += setOf("GradleDependency", "AndroidGradlePluginVersion", "NewerVersionAvailable")
+        disable += setOf("GradleDependency", "AndroidGradlePluginVersion", "NewerVersionAvailable", "OldTargetApi")
     }
 
     // F-Droid: no dependency metadata blob in the APK.
