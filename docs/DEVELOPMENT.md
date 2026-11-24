@@ -35,5 +35,15 @@ Required repository secrets: `KEYSTORE_BASE64` (base64 of the keystore), `KEYSTO
 | F-26 | Are calls from saved contacts delivered to the screening service without `READ_CONTACTS`? | **not yet verified** – see `docs/TESTING.md` |
 | F-62 | Is a battery-optimisation exemption needed? | **not yet verified** – the app only offers it optionally in Settings |
 
-## Not yet implemented
-- Roborazzi screenshot tests (SPEC §10) and the README/fastlane screenshots and GIF.
+## Open to-dos
+| Topic | Details |
+|---|---|
+| AGP / compile SDK 37 | `compileSdk`/`targetSdk` are 37, but AGP 8.13.0 is only tested up to 36.1. The warning is silenced with `android.suppressUnsupportedCompileSdk=37.0` in `gradle.properties`. When an AGP version with official SDK 37 support is out: update AGP (check Kotlin/KSP compatibility) and remove that line. |
+| Robolectric | Tests are pinned to SDK 36 in `app/src/test/resources/robolectric.properties` because Robolectric does not support 37 yet. Remove the pin once it does. |
+| F-26 / F-62 | Device verification pending, see table above and `docs/TESTING.md`. |
+| Manual device test | The app has only been compiled and installed on a Pixel 6 Pro, not yet tested with real calls (`docs/TESTING.md`). |
+| Screenshot tests | Roborazzi tests (SPEC section 10) are missing. Screens must first be split into stateless composables that take plain data, so they can be rendered with fictitious sample data. Also needed: screenshots and a short GIF for the README and `fastlane/metadata/android/*/images/phoneScreenshots`. |
+| Release signing | Create a keystore and add the secrets `KEYSTORE_BASE64`, `KEYSTORE_PASSWORD`, `KEY_ALIAS`, `KEY_PASSWORD` in the GitHub repository before tagging `v1.0.0`. |
+| CI verification | After the lint fixes (`OldTargetApi`, Actions v5) confirm that the CI workflow is green on GitHub. |
+| Extra permissions | WorkManager adds `WAKE_LOCK`, `ACCESS_NETWORK_STATE` and `FOREGROUND_SERVICE`. There is no INTERNET permission. Consider removing the unneeded ones via `tools:node="remove"` if F-Droid review asks. |
+| Reset counters on answered call | Idea, deliberately not implemented: reset an entry's counters when a call that passed is answered. Would need `READ_PHONE_STATE` and a phone-state receiver; the caller's number is not available there, so it would rely on the last allowed call. Rare edge case. |
