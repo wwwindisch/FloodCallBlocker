@@ -2,7 +2,7 @@
 
 ## Requirements
 - JDK 21
-- Android SDK (platform 36, build-tools 35+), `local.properties` with `sdk.dir=…`
+- Android SDK (platform 37.0, build-tools 35+), `local.properties` with `sdk.dir=…`
 
 ## Modules
 - `:core` – pure Kotlin/JVM: rule engine (`CallEngine`), models, phone-number normalisation (libphonenumber). No Android dependencies; fully unit-tested.

@@ -8,12 +8,12 @@ plugins {
 
 android {
     namespace = "app.floodcallblocker"
-    compileSdk = 36
+    compileSdk = 37
 
     defaultConfig {
         applicationId = "app.floodcallblocker"
         minSdk = 29
-        targetSdk = 36
+        targetSdk = 37
         versionCode = 1
         versionName = "1.0.0"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
@@ -58,7 +58,7 @@ android {
         abortOnError = true
         checkDependencies = true
         // Dependency updates are handled manually.
-        disable += setOf("GradleDependency", "AndroidGradlePluginVersion", "NewerVersionAvailable", "OldTargetApi")
+        disable += setOf("GradleDependency", "AndroidGradlePluginVersion", "NewerVersionAvailable")
     }
 
     // F-Droid: no dependency metadata blob in the APK.
