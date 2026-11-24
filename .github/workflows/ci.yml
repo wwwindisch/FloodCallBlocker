@@ -15,6 +15,11 @@ jobs:
           distribution: temurin
           java-version: 21
       - uses: gradle/actions/setup-gradle@v5
+      # Robolectric downloads its Android jars from Maven Central; cache them against flaky downloads.
+      - uses: actions/cache@v4
+        with:
+          path: ~/.m2/repository/org/robolectric
+          key: robolectric-${{ hashFiles('gradle/libs.versions.toml', 'app/src/test/resources/robolectric.properties') }}
       - name: ktlint
         run: ./gradlew ktlintCheck
       - name: Unit tests
