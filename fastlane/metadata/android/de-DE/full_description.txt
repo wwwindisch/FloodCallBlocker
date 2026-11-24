@@ -1,0 +1,19 @@
+Manche Personen rufen immer wieder an. Du willst sie nicht dauerhaft blockieren – nur nicht im Minutentakt.
+
+FloodCallBlocker sperrt eine Nummer oder einen Kontakt <b>automatisch und vorübergehend</b>, wenn innerhalb eines Zeitraums zu viele Anrufe eingehen. Beispiel: Max darf 2-mal innerhalb von 5 Minuten anrufen. Beim dritten Anruf wird abgelehnt und Max ist 3 Stunden gesperrt. Danach kommt er wieder normal durch.
+
+<b>Funktionen</b>
+• Pro Nummer oder Kontakt: erlaubte Anrufe, Zeitfenster, Sperrdauer
+• Gesperrte Anrufe ablehnen oder stummschalten
+• „Immer gesperrt“ mit 0 erlaubten Anrufen
+• Alle Nummern eines Kontakts zählen gemeinsam
+• Benachrichtigung mit Countdown und Knopf zum Aufheben der Sperre
+• Protokoll der Sperren und abgelehnten Anrufe
+• Export und Import
+• Heller und dunkler Modus, Material You, Deutsch und Englisch
+
+<b>Datenschutz</b>
+Die App hat keine Internet-Berechtigung, keine Konten, kein Tracking. Alle Daten bleiben auf deinem Telefon.
+
+<b>Einrichtung</b>
+Android verlangt, dass du die App als „Anrufer-ID- &amp; Spam-App“ festlegst, damit sie eingehende Anrufe prüfen kann.

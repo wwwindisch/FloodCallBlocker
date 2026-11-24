@@ -1,0 +1,19 @@
+Some people call again and again. You do not want to block them forever – just not every minute.
+
+FloodCallBlocker blocks a number or contact <b>automatically and temporarily</b> when too many calls arrive within a period. Example: Max may call 2 times within 5 minutes. A third call is rejected and Max is blocked for 3 hours. Afterwards he gets through normally again.
+
+<b>Features</b>
+• Per number or contact: allowed calls, time window, block duration
+• Reject or silence blocked calls
+• "Always blocked" with 0 allowed calls
+• All numbers of a contact count together
+• Notification with countdown and a button to lift the block
+• Log of blocks and rejected calls
+• Export and import
+• Light and dark theme, Material You, English and German
+
+<b>Privacy</b>
+The app has no internet permission, no accounts, no analytics. All data stays on your phone.
+
+<b>Setup</b>
+Android needs you to set the app as your "Caller ID &amp; spam app" so it can screen incoming calls.

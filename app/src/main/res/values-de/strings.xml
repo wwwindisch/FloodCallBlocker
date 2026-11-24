@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="PluralsCandidate">
+    <!-- Navigation / common -->
+    <string name="nav_overview">Übersicht</string>
+    <string name="nav_log">Protokoll</string>
+    <string name="nav_settings">Einstellungen</string>
+    <string name="action_add">Hinzufügen</string>
+    <string name="action_back">Zurück</string>
+    <string name="action_next">Weiter</string>
+    <string name="action_finish">Los geht’s</string>
+    <string name="action_cancel">Abbrechen</string>
+    <string name="action_ok">OK</string>
+    <string name="action_save">Speichern</string>
+    <string name="action_delete">Löschen</string>
+    <string name="action_undo">Rückgängig</string>
+    <string name="action_lift_block">Sperre aufheben</string>
+    <string name="action_export">Exportieren</string>
+    <string name="action_import">Importieren</string>
+    <string name="action_clear_log">Protokoll leeren</string>
+    <string name="action_reject">Ablehnen</string>
+    <string name="action_silence">Stummschalten</string>
+
+    <!-- Durations -->
+    <string name="duration_d">%d Tg.</string>
+    <string name="duration_h">%d Std.</string>
+    <string name="duration_min">%d Min.</string>
+    <plurals name="calls_in_minutes">
+        <item quantity="one">%1$d Anruf in %2$d Min.</item>
+        <item quantity="other">%1$d Anrufe in %2$d Min.</item>
+    </plurals>
+
+    <!-- Overview -->
+    <string name="add_by_number">Nummer eingeben</string>
+    <string name="add_by_contact">Aus Kontakten wählen</string>
+    <string name="empty_title">Noch niemand wird überwacht</string>
+    <string name="empty_body">Tippe auf +, um eine Nummer oder einen Kontakt hinzuzufügen. Beispiel: Max darf 2-mal innerhalb von 5 Minuten anrufen – beim dritten Anruf wird abgelehnt und Max ist 3 Stunden gesperrt.</string>
+    <string name="rule_summary">max. %1$d× in %2$s → %3$s Sperre</string>
+    <string name="rule_summary_always">Immer gesperrt</string>
+    <string name="status_blocked_until">Gesperrt bis %s</string>
+    <string name="status_monitored">Überwacht</string>
+    <string name="status_always_blocked">Immer gesperrt</string>
+    <string name="status_paused">Pausiert</string>
+    <string name="status_screening_off">Anruf-Screening ist nicht aktiv – Sperren funktionieren nicht.</string>
+    <string name="status_fix">Beheben</string>
+    <string name="entry_deleted">Eintrag gelöscht</string>
+    <string name="contact_missing">Kontakt nicht mehr vorhanden</string>
+    <string name="error_number_in_use">Diese Nummer steht bereits im Eintrag „%s“.</string>
+    <string name="error_duplicate_title">Nummer bereits überwacht</string>
+    <string name="error_contact_no_numbers">Dieser Kontakt hat keine verwendbare Telefonnummer.</string>
+    <string name="error_contact_failed">Der Kontakt konnte nicht gelesen werden.</string>
+
+    <!-- Edit -->
+    <string name="edit_title_new">Neuer Eintrag</string>
+    <string name="edit_title">Eintrag bearbeiten</string>
+    <string name="field_name">Name (optional)</string>
+    <string name="field_number">Telefonnummer</string>
+    <string name="help_number">Jede Schreibweise ist möglich, z. B. 0049 … oder +49 …</string>
+    <string name="error_invalid_number">Keine gültige Telefonnummer</string>
+    <string name="field_contact_numbers">Nummern dieses Kontakts</string>
+    <string name="help_contact_numbers">Alle Nummern zählen gemeinsam. Sie folgen automatisch deinem Adressbuch.</string>
+    <string name="section_rule">Regel</string>
+    <string name="field_allowed">Erlaubte Anrufe</string>
+    <string name="help_allowed">So oft darf die Person innerhalb des Zeitraums anrufen, ohne gesperrt zu werden. 0 = immer sperren.</string>
+    <string name="field_window">Innerhalb von (Minuten)</string>
+    <string name="help_window">Gezählt werden immer die Anrufe der letzten X Minuten. Ältere Anrufe zählen nicht mehr mit.</string>
+    <string name="field_duration">Sperrdauer</string>
+    <string name="unit_hours">Stunden</string>
+    <string name="unit_minutes">Minuten</string>
+    <string name="help_duration">So lange werden Anrufe nach Überschreiten des Limits abgewiesen. Weitere Anrufe in dieser Zeit verlängern die Sperre nicht.</string>
+    <string name="error_duration">Zwischen 1 Minute und 7 Tagen</string>
+    <string name="error_range">Zwischen %1$d und %2$d</string>
+    <string name="field_action">Während der Sperre</string>
+    <string name="help_action">Ablehnen: Der Anrufer hört, dass abgelehnt wurde. Stummschalten: Das Telefon klingelt nicht, der Anruf bleibt aber sichtbar.</string>
+    <string name="field_enabled">Überwachung aktiv</string>
+    <string name="help_enabled">Ausschalten, um den Eintrag zu pausieren, ohne ihn zu löschen.</string>
+    <string name="confirm_delete_title">Eintrag löschen?</string>
+    <string name="confirm_delete_body">Eine laufende Sperre endet sofort.</string>
+    <string name="explain_someone">Diese Person</string>
+    <string name="explain_invalid">Bitte gültige Werte eingeben, dann steht hier, was die Regel bewirkt.</string>
+    <string name="explain_reject">%1$s kommt bis zu **%2$d-mal innerhalb von %3$s** durch. Ruft die Person in diesem Zeitraum noch einmal an (Anruf **Nr. %4$d**), wird der Anruf abgelehnt und sie ist **%5$s** gesperrt. Gezählt werden immer die Anrufe der **letzten %3$s**. Anrufe während der Sperre verlängern sie nicht.</string>
+    <string name="explain_silence">%1$s kommt bis zu **%2$d-mal innerhalb von %3$s** durch. Ruft die Person in diesem Zeitraum noch einmal an (Anruf **Nr. %4$d**), wird der Anruf stummgeschaltet und sie ist **%5$s** gesperrt. Gezählt werden immer die Anrufe der **letzten %3$s**. Anrufe während der Sperre verlängern sie nicht.</string>
+    <string name="explain_always_reject">Alle Anrufe von %1$s werden **immer abgelehnt**, bis du den Wert änderst oder die Überwachung ausschaltest.</string>
+    <string name="explain_always_silence">Alle Anrufe von %1$s werden **immer stummgeschaltet**, bis du den Wert änderst oder die Überwachung ausschaltest.</string>
+    <string name="rule_info_title">So funktioniert die Regel</string>
+    <string name="rule_info_body">Die App zählt die Anrufe einer Person in einem **gleitenden Zeitfenster**: immer die letzten X Minuten, rückwärts ab dem aktuellen Anruf.\n\n**Beispiel** mit 2 erlaubten Anrufen, 5 Minuten, 3 Stunden Sperre:\n\n10:00 – 1 Anruf → kommt durch\n10:03 – 2 Anrufe → kommt durch\n10:09 – nur dieser Anruf zählt (die anderen sind älter als 5 Min.) → kommt durch\n10:10 – 2 Anrufe → kommt durch\n10:12 – 3 Anrufe → **abgelehnt, gesperrt bis 13:12**\n11:30 – gesperrt, Anruf abgelehnt, Sperre bleibt bis 13:12\n13:15 – Sperre vorbei → kommt durch\n\nDer Anruf, der das Limit überschreitet, wird bereits gesperrt. Anrufe während einer Sperre zählen nicht und verlängern sie nicht.\n\n**0 erlaubte Anrufe** heißt: immer gesperrt.</string>
+
+    <!-- Log -->
+    <string name="log_all">Alle</string>
+    <string name="log_empty">Noch nichts protokolliert. Sperren und abgelehnte Anrufe erscheinen hier 30 Tage lang.</string>
+    <string name="log_block_started">Sperre gestartet: %1$s, bis %2$s</string>
+    <string name="log_call_rejected">Anruf abgelehnt</string>
+    <string name="log_call_silenced">Anruf stummgeschaltet</string>
+    <string name="log_block_expired">Sperre abgelaufen</string>
+    <string name="log_block_lifted">Sperre aufgehoben</string>
+
+    <!-- Settings -->
+    <string name="settings_design">Darstellung</string>
+    <string name="theme_system">System folgen</string>
+    <string name="theme_light">Hell</string>
+    <string name="theme_dark">Dunkel</string>
+    <string name="material_you">Material-You-Farben</string>
+    <string name="material_you_help">Farben deines Hintergrundbilds verwenden.</string>
+    <string name="settings_notification">Benachrichtigung bei Sperre</string>
+    <string name="notif_quiet">Dezent</string>
+    <string name="notif_quiet_help">Nur Symbol in der Statusleiste und Eintrag in der Benachrichtigungsleiste. Kein Ton, keine Vibration.</string>
+    <string name="notif_popup">Kurz einblenden</string>
+    <string name="notif_popup_help">Erscheint kurz oben auf dem Bildschirm (lautlos), danach dezent.</string>
+    <string name="notif_off">Aus</string>
+    <string name="notif_off_help">Sperren wirken trotzdem; sichtbar nur in der App.</string>
+    <string name="notif_more_settings">Weitere Einstellungen in Android</string>
+    <string name="notif_disabled_in_android">In den Android-Einstellungen deaktiviert</string>
+    <string name="notif_changed_in_android">In den Android-Einstellungen geändert – das kann von der Auswahl oben abweichen.</string>
+    <string name="settings_backup">Sicherung</string>
+    <string name="export_include_log">Protokoll einschließen</string>
+    <string name="export_done">Sicherung gespeichert</string>
+    <string name="export_failed">Sicherung konnte nicht gespeichert werden</string>
+    <string name="import_invalid">Diese Datei ist keine gültige Sicherung.</string>
+    <string name="import_title">Sicherung importieren</string>
+    <string name="import_summary">%1$d neue Einträge, %2$d Konflikte (Nummer wird bereits überwacht).</string>
+    <string name="import_skip">Konflikte überspringen</string>
+    <string name="import_overwrite">Konflikte überschreiben</string>
+    <string name="import_done">%d Einträge importiert</string>
+    <string name="settings_more">Weiteres</string>
+    <string name="confirm_clear_log">Alle Protokolleinträge werden gelöscht.</string>
+    <string name="battery_help">Normalerweise nicht nötig: Android startet den Screening-Dienst selbst. Nur wenn Sperren auf deinem Gerät unzuverlässig sind, die App von der Akku-Optimierung ausnehmen.</string>
+    <string name="battery_open">Akku-Optimierung öffnen</string>
+    <string name="settings_about">Über</string>
+    <string name="about_text">FloodCallBlocker %1$s\nSperrt Anrufer, die zu oft anrufen – vorübergehend. Vollständig offline, keine Internet-Berechtigung. Freie Software unter GPLv3.</string>
+    <string name="about_source">Quellcode</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_1_title">Willkommen</string>
+    <string name="onboarding_1_body">Manche Personen rufen immer wieder an. Du willst sie nicht dauerhaft blockieren – nur nicht im Minutentakt.\n\nFloodCallBlocker sperrt eine Nummer automatisch und vorübergehend, wenn sie zu oft anruft. Alles bleibt auf deinem Telefon.</string>
+    <string name="onboarding_2_title">Anruf-Screening</string>
+    <string name="onboarding_2_body">Damit die App eingehende Anrufe prüfen kann, musst du sie in Android als „Anrufer-ID- &amp; Spam-App“ festlegen. Das ist Pflicht. Die App sieht nur Nummern, die du hinzugefügt hast.</string>
+    <string name="onboarding_role_action">Als Anrufer-ID-App festlegen</string>
+    <string name="onboarding_role_done">✓ Anruf-Screening ist aktiv</string>
+    <string name="onboarding_later">Später</string>
+    <string name="onboarding_3_title">Benachrichtigungen</string>
+    <string name="onboarding_3_body">Solange eine Nummer gesperrt ist, zeigt eine kleine Benachrichtigung, bis wann – mit Knopf zum Aufheben. Empfohlen, die Sperren funktionieren aber auch ohne.</string>
+    <string name="onboarding_notif_action">Benachrichtigungen erlauben</string>
+    <string name="onboarding_notif_done">✓ Benachrichtigungen sind erlaubt</string>
+    <string name="onboarding_4_title">Kontakte</string>
+    <string name="onboarding_4_body">Optional: Mit Zugriff auf deine Kontakte kannst du einen Kontakt auswählen (alle seine Nummern zählen gemeinsam) und die App hält die Nummern aktuell. Ohne Zugriff kannst du Nummern von Hand eingeben.</string>
+    <string name="onboarding_contacts_action">Kontaktzugriff erlauben</string>
+    <string name="onboarding_contacts_done">✓ Kontaktzugriff erlaubt</string>
+
+    <!-- Notification -->
+    <string name="channel_quiet">Sperren (dezent)</string>
+    <string name="channel_quiet_desc">Zeigt eine laufende Sperre ohne Ton.</string>
+    <string name="channel_popup">Sperren (kurz einblenden)</string>
+    <string name="channel_popup_desc">Zeigt eine laufende Sperre kurz oben auf dem Bildschirm, ohne Ton.</string>
+    <string name="notification_text">Gesperrt bis %1$s · %2$s</string>
+</resources>

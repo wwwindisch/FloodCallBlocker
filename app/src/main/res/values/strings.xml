@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="PluralsCandidate">
+    <string name="app_name" translatable="false">FloodCallBlocker</string>
+    <string name="source_url" translatable="false">https://github.com/GITHUB_USER/FloodCallBlocker</string>
+
+    <!-- Navigation / common -->
+    <string name="nav_overview">Overview</string>
+    <string name="nav_log">Log</string>
+    <string name="nav_settings">Settings</string>
+    <string name="action_add">Add</string>
+    <string name="action_back">Back</string>
+    <string name="action_next">Next</string>
+    <string name="action_finish">Get started</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_ok">OK</string>
+    <string name="action_save">Save</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_undo">Undo</string>
+    <string name="action_lift_block">Lift block</string>
+    <string name="action_export">Export</string>
+    <string name="action_import">Import</string>
+    <string name="action_clear_log">Clear log</string>
+    <string name="action_reject">Reject</string>
+    <string name="action_silence">Silence</string>
+
+    <!-- Durations -->
+    <string name="duration_d">%d d</string>
+    <string name="duration_h">%d h</string>
+    <string name="duration_min">%d min</string>
+    <plurals name="calls_in_minutes">
+        <item quantity="one">%1$d call in %2$d min</item>
+        <item quantity="other">%1$d calls in %2$d min</item>
+    </plurals>
+
+    <!-- Overview -->
+    <string name="add_by_number">Enter number</string>
+    <string name="add_by_contact">Pick from contacts</string>
+    <string name="empty_title">Nobody is monitored yet</string>
+    <string name="empty_body">Tap + to add a number or contact. Example: let Max call twice within 5 minutes – a third call is rejected and Max is blocked for 3 hours.</string>
+    <string name="rule_summary">max. %1$d× in %2$s → %3$s block</string>
+    <string name="rule_summary_always">Always blocked</string>
+    <string name="status_blocked_until">Blocked until %s</string>
+    <string name="status_monitored">Monitored</string>
+    <string name="status_always_blocked">Always blocked</string>
+    <string name="status_paused">Paused</string>
+    <string name="status_screening_off">Call screening is not active – blocks will not work.</string>
+    <string name="status_fix">Fix</string>
+    <string name="entry_deleted">Entry deleted</string>
+    <string name="contact_missing">Contact no longer exists</string>
+    <string name="error_number_in_use">This number is already used by the entry “%s”.</string>
+    <string name="error_duplicate_title">Number already monitored</string>
+    <string name="error_contact_no_numbers">This contact has no usable phone numbers.</string>
+    <string name="error_contact_failed">The contact could not be read.</string>
+
+    <!-- Edit -->
+    <string name="edit_title_new">New entry</string>
+    <string name="edit_title">Edit entry</string>
+    <string name="field_name">Name (optional)</string>
+    <string name="field_number">Phone number</string>
+    <string name="help_number">Any spelling works, e.g. 0049 … or +49 …</string>
+    <string name="error_invalid_number">Not a valid phone number</string>
+    <string name="field_contact_numbers">Numbers of this contact</string>
+    <string name="help_contact_numbers">All numbers count together. They follow your address book automatically.</string>
+    <string name="section_rule">Rule</string>
+    <string name="field_allowed">Allowed calls</string>
+    <string name="help_allowed">How often the person may call within the period without being blocked. 0 = always block.</string>
+    <string name="field_window">Within (minutes)</string>
+    <string name="help_window">Only the calls of the last X minutes are counted. Older calls no longer count.</string>
+    <string name="field_duration">Block duration</string>
+    <string name="unit_hours">Hours</string>
+    <string name="unit_minutes">Minutes</string>
+    <string name="help_duration">Calls are turned away this long after the limit was exceeded. Further calls do not extend the block.</string>
+    <string name="error_duration">Between 1 minute and 7 days</string>
+    <string name="error_range">Between %1$d and %2$d</string>
+    <string name="field_action">While blocked</string>
+    <string name="help_action">Reject: the caller hears it is declined. Silence: the phone does not ring, but the call stays visible.</string>
+    <string name="field_enabled">Monitoring enabled</string>
+    <string name="help_enabled">Switch off to pause this entry without deleting it.</string>
+    <string name="confirm_delete_title">Delete entry?</string>
+    <string name="confirm_delete_body">A running block ends immediately.</string>
+    <string name="explain_someone">This person</string>
+    <string name="explain_invalid">Please enter valid values to see what the rule does.</string>
+    <string name="explain_reject">%1$s gets through up to **%2$d× within %3$s**. If they call again in that period (call **#%4$d**), the call is rejected and they are blocked for **%5$s**. Always the calls of the **last %3$s** are counted. Calls during the block do not extend it.</string>
+    <string name="explain_silence">%1$s gets through up to **%2$d× within %3$s**. If they call again in that period (call **#%4$d**), the call is silenced and they are blocked for **%5$s**. Always the calls of the **last %3$s** are counted. Calls during the block do not extend it.</string>
+    <string name="explain_always_reject">All calls from %1$s are **always rejected** until you change the value or switch monitoring off.</string>
+    <string name="explain_always_silence">All calls from %1$s are **always silenced** until you change the value or switch monitoring off.</string>
+    <string name="rule_info_title">How the rule works</string>
+    <string name="rule_info_body">The app counts the calls of a person in a **sliding window**: always the last X minutes, counted backwards from the current call.\n\n**Example** with 2 allowed calls, 5 minutes, 3 hours block:\n\n10:00 – 1 call → passes\n10:03 – 2 calls → passes\n10:09 – only this call counts (the others are older than 5 min) → passes\n10:10 – 2 calls → passes\n10:12 – 3 calls → **rejected, blocked until 13:12**\n11:30 – blocked, call rejected, block stays until 13:12\n13:15 – block over → passes\n\nThe call that exceeds the limit is already blocked. Calls during a block neither count nor extend it.\n\n**0 allowed calls** means: always blocked.</string>
+
+    <!-- Log -->
+    <string name="log_all">All</string>
+    <string name="log_empty">Nothing logged yet. Blocks and rejected calls show up here for 30 days.</string>
+    <string name="log_block_started">Block started: %1$s, until %2$s</string>
+    <string name="log_call_rejected">Call rejected</string>
+    <string name="log_call_silenced">Call silenced</string>
+    <string name="log_block_expired">Block expired</string>
+    <string name="log_block_lifted">Block lifted</string>
+
+    <!-- Settings -->
+    <string name="settings_design">Appearance</string>
+    <string name="theme_system">Follow system</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+    <string name="material_you">Material You colors</string>
+    <string name="material_you_help">Use the colors of your wallpaper.</string>
+    <string name="settings_notification">Notification on block</string>
+    <string name="notif_quiet">Discreet</string>
+    <string name="notif_quiet_help">Status bar icon and notification shade only. No sound, no vibration.</string>
+    <string name="notif_popup">Show briefly</string>
+    <string name="notif_popup_help">Appears briefly at the top of the screen (silently), then stays discreet.</string>
+    <string name="notif_off">Off</string>
+    <string name="notif_off_help">Blocks still work; they are only visible in the app.</string>
+    <string name="notif_more_settings">More settings in Android</string>
+    <string name="notif_disabled_in_android">Disabled in Android settings</string>
+    <string name="notif_changed_in_android">Changed in Android settings – this may differ from the choice above.</string>
+    <string name="settings_backup">Backup</string>
+    <string name="export_include_log">Include log</string>
+    <string name="export_done">Backup saved</string>
+    <string name="export_failed">Backup could not be saved</string>
+    <string name="import_invalid">This file is not a valid backup.</string>
+    <string name="import_title">Import backup</string>
+    <string name="import_summary">%1$d new entries, %2$d conflicts (number already monitored).</string>
+    <string name="import_skip">Skip conflicts</string>
+    <string name="import_overwrite">Overwrite conflicts</string>
+    <string name="import_done">%d entries imported</string>
+    <string name="settings_more">More</string>
+    <string name="confirm_clear_log">All log entries will be deleted.</string>
+    <string name="battery_help">Usually not needed: Android starts the screening service itself. Only if blocks are unreliable on your device, exclude the app from battery optimization.</string>
+    <string name="battery_open">Open battery optimization</string>
+    <string name="settings_about">About</string>
+    <string name="about_text">FloodCallBlocker %1$s\nBlocks callers who call too often – temporarily. Fully offline, no internet permission. Free software under GPLv3.</string>
+    <string name="about_source">Source code</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_1_title">Welcome</string>
+    <string name="onboarding_1_body">Some people call again and again. You do not want to block them forever – just not every minute.\n\nFloodCallBlocker blocks a number automatically and temporarily when it calls too often. Everything stays on your phone.</string>
+    <string name="onboarding_2_title">Call screening</string>
+    <string name="onboarding_2_body">So the app can check incoming calls, Android needs you to set it as your “Caller ID &amp; spam app”. This is required. The app only looks at numbers you added.</string>
+    <string name="onboarding_role_action">Set as caller ID app</string>
+    <string name="onboarding_role_done">✓ Call screening is active</string>
+    <string name="onboarding_later">Later</string>
+    <string name="onboarding_3_title">Notifications</string>
+    <string name="onboarding_3_body">While a number is blocked, a small notification shows until when – with a button to lift the block. Recommended, but blocks work without it.</string>
+    <string name="onboarding_notif_action">Allow notifications</string>
+    <string name="onboarding_notif_done">✓ Notifications are allowed</string>
+    <string name="onboarding_4_title">Contacts</string>
+    <string name="onboarding_4_body">Optional: with access to your contacts you can pick a contact (all its numbers count together), and the app keeps the numbers up to date. Without it you can still enter numbers by hand.</string>
+    <string name="onboarding_contacts_action">Allow contacts access</string>
+    <string name="onboarding_contacts_done">✓ Contacts access allowed</string>
+
+    <!-- Notification -->
+    <string name="channel_quiet">Blocks (discreet)</string>
+    <string name="channel_quiet_desc">Shows a running block without sound.</string>
+    <string name="channel_popup">Blocks (brief popup)</string>
+    <string name="channel_popup_desc">Shows a running block briefly at the top of the screen, without sound.</string>
+    <string name="notification_text">Blocked until %1$s · %2$s</string>
+</resources>
