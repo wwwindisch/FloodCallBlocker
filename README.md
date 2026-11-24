@@ -6,6 +6,8 @@
 [![License: GPLv3](https://img.shields.io/badge/license-GPLv3-blue.svg)](LICENSE)
 [![Release](https://img.shields.io/github/v/release/wwwindisch/FloodCallBlocker)](https://github.com/wwwindisch/FloodCallBlocker/releases)
 
+> **AI-only project:** This app was written entirely by an AI (Claude Code). There are no comprehensive human code reviews. Automated tests and linting run in CI, but please review the code yourself before relying on it, and report any problems as issues.
+
 ## The problem
 
 Some people call again and again, minute after minute. You do not want to block them permanently because you do want to talk to them – just not on a minute-by-minute basis.
@@ -73,6 +75,10 @@ The app has **no internet permission**, no accounts, no analytics, and no Google
 ## Kurzfassung (Deutsch)
 
 FloodCallBlocker sperrt eine Nummer oder einen Kontakt **automatisch und vorübergehend**, wenn zu viele Anrufe in kurzer Zeit eingehen – z. B. „2 Anrufe in 5 Minuten, beim dritten wird abgelehnt und für 3 Stunden gesperrt“. Danach kommt die Person wieder normal durch. Die App läuft vollständig offline (keine Internet-Berechtigung), speichert alles nur auf dem Gerät und ist Freie Software (GPLv3). Einrichtung: APK installieren, die App als „Anrufer-ID- & Spam-App“ festlegen, Nummer oder Kontakt hinzufügen.
+
+## Kurzer Hinweis zur Entstehung
+
+Dies ist ein „AI-only“-Projekt: Der gesamte Code wurde von einer KI (Claude Code) geschrieben, es gibt keine umfassenden menschlichen Code-Reviews.
 
 ## Contributing
 
