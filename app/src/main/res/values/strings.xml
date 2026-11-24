@@ -133,7 +133,7 @@
 
     <!-- Onboarding -->
     <string name="onboarding_1_title">Welcome</string>
-    <string name="onboarding_1_body">Some people call again and again. You do not want to block them forever – just not every minute.\n\nFloodCallBlocker blocks a number automatically and temporarily when it calls too often. Everything stays on your phone.</string>
+    <string name="onboarding_1_body">Some people disturb you with many calls in a short time. You do not want to block them permanently, just temporarily, to escape the flood of calls. FloodCallBlocker automates exactly that.\n\nAfter a set number of call attempts within a set period it blocks a number temporarily and releases it again later. Everything stays on your phone.</string>
     <string name="onboarding_2_title">Call screening</string>
     <string name="onboarding_2_body">So the app can check incoming calls, Android needs you to set it as your “Caller ID &amp; spam app”. This is required. The app only looks at numbers you added.</string>
     <string name="onboarding_role_action">Set as caller ID app</string>

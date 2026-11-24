@@ -130,7 +130,7 @@
 
     <!-- Onboarding -->
     <string name="onboarding_1_title">Willkommen</string>
-    <string name="onboarding_1_body">Manche Personen rufen immer wieder an. Du willst sie nicht dauerhaft blockieren – nur nicht im Minutentakt.\n\nFloodCallBlocker sperrt eine Nummer automatisch und vorübergehend, wenn sie zu oft anruft. Alles bleibt auf deinem Telefon.</string>
+    <string name="onboarding_1_body">Manche Personen stören durch viele Anrufe in kurzer Zeit. Du willst sie aber nicht dauerhaft blockieren, sondern nur vorübergehend sperren, um der Anruf-Flut zu entgehen. Genau das automatisiert der FloodCallBlocker.\n\nEr sperrt eine Nummer nach einer bestimmten Anzahl von Anrufversuchen in einem bestimmten Zeitraum vorübergehend und gibt sie später wieder frei. Alles bleibt auf deinem Telefon.</string>
     <string name="onboarding_2_title">Anruf-Screening</string>
     <string name="onboarding_2_body">Damit die App eingehende Anrufe prüfen kann, musst du sie in Android als „Anrufer-ID- &amp; Spam-App“ festlegen. Das ist Pflicht. Die App sieht nur Nummern, die du hinzugefügt hast.</string>
     <string name="onboarding_role_action">Als Anrufer-ID-App festlegen</string>
