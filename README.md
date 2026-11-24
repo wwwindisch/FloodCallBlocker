@@ -2,9 +2,9 @@
 
 **Temporarily blocks callers who call too often – without blocking them forever.**
 
-[![CI](https://github.com/GITHUB_USER/FloodCallBlocker/actions/workflows/ci.yml/badge.svg)](https://github.com/GITHUB_USER/FloodCallBlocker/actions/workflows/ci.yml)
+[![CI](https://github.com/wwwindisch/FloodCallBlocker/actions/workflows/ci.yml/badge.svg)](https://github.com/wwwindisch/FloodCallBlocker/actions/workflows/ci.yml)
 [![License: GPLv3](https://img.shields.io/badge/license-GPLv3-blue.svg)](LICENSE)
-[![Release](https://img.shields.io/github/v/release/GITHUB_USER/FloodCallBlocker)](https://github.com/GITHUB_USER/FloodCallBlocker/releases)
+[![Release](https://img.shields.io/github/v/release/wwwindisch/FloodCallBlocker)](https://github.com/wwwindisch/FloodCallBlocker/releases)
 
 ## The problem
 
@@ -42,7 +42,7 @@ Calls during a block do not count and do not extend it. With **0 allowed calls**
 
 ## Installation
 
-Download the APK from [GitHub Releases](https://github.com/GITHUB_USER/FloodCallBlocker/releases) and install it (Android 10 or newer). F-Droid is planned.
+Download the APK from [GitHub Releases](https://github.com/wwwindisch/FloodCallBlocker/releases) and install it (Android 10 or newer). F-Droid is planned.
 
 ## First-time setup and permissions
 

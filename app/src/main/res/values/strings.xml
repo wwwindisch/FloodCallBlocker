@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="PluralsCandidate">
     <string name="app_name" translatable="false">FloodCallBlocker</string>
-    <string name="source_url" translatable="false">https://github.com/GITHUB_USER/FloodCallBlocker</string>
+    <string name="source_url" translatable="false">https://github.com/wwwindisch/FloodCallBlocker</string>
 
     <!-- Navigation / common -->
     <string name="nav_overview">Overview</string>
