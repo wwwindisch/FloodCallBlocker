@@ -6,6 +6,12 @@ and the project adheres to [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+## [1.0.1] - 2026-11-25
+
+### Changed
+- Status-bar icon of the block notification is now a compact version of the app icon
+  (struck-through handset with bars) instead of a plain handset that looked like an active call.
+
 ## [1.0.0] - 2026-11-24
 
 ### Added
